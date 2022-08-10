@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="../static/css/primera-afirmacion.css">
+    <title>Verdadero o falso ODS 5</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@100;300;400&display=swap" rel="stylesheet">
+
+    <script>
+      let afirmaciones = {{ afirmaciones|tojson }}
+    </script>
+</head>
+
+<body>
+    <div class="container"></div>
+    <header>
+        <h1>Primera afirmación</h1>
+        <div class="titulo">
+            <a href= "pantalla-inicio.html"><img src="../img/fotos/logo-inicio.png" id="logo-inicio"></a>
+        </div>
+    </header>
+  
+    <main>
+      <div class="afirmacion">
+        <h2 id="afirmacion"></h2>
+      </div>
+      
+      <div id="imagen" style="display:block">
+        <img src="../static/img/fotos/imagen-1.jpg" id="imagen-1">
+      </div>
+
+      <div id="verdadero" style="display:none; z-index:10">
+        <p class="btn-correcto"> Correcto! </p>
+        <div class="fundamentacion">
+            <p class="desarrollo-texto" id="fundamento"></p>
+        </div>
+        <div class="puntaje">
+            <p class="puntaje-texto">x/12</p>
+        </div>
+        <a href="segunda-afirmacion.html" class="btn-siguiente" onlick="siguiente()">Siguiente</a>
+      </div>
+
+      <div id="falso" style="display:none"> 
+        <p class="btn-incorrecto">Incorrecto</p>
+        <div class="fundamentacion">
+            <p class="desarrollo-texto">.</p>
+        </div>
+        <div class="puntaje">
+            <p class="puntaje-texto">x/12</p>
+        </div>
+      </div>
+        
+    </main>
+    <footer id="footer">
+        <a class="btn-verdadero" onclick="check('V')">VERDADERO</a>
+        <a class="btn-falso" onclick="check('F')">FALSO</a>
+    </footer>
+
+  <script src="../static/afirmaciones/afirmaciones.js"></script>
+</body>
+
+</html>
