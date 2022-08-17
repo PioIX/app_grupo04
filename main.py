@@ -5,8 +5,6 @@ app = Flask(__name__)
 
 @app.route('/')
 def index():
-  
-
   return render_template('inicio.html')
 
 
@@ -29,6 +27,8 @@ def juego():
   
     
   conn.close()
+
+  print(dicc)
   return render_template('juego.html',afirmaciones=afirmaciones)
 
 app.run(host='0.0.0.0', port=81)
