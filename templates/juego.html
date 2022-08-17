@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="UTF-8">
-    <link rel="stylesheet" href="../static/css/primera-afirmacion.css">
+    <link rel="stylesheet" href="../static/css/juego.css">
     <title>Verdadero o falso ODS 5</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -43,14 +43,16 @@
         <a href="#" type="button" class="btn-siguiente" onclick="siguiente();">Siguiente</a>  
       </div>
 
-      <div id="falso" style="display:none"> 
+      <div id="falso" style="display:none; zindex:10"> 
         <p class="btn-incorrecto">Incorrecto</p>
         <div class="fundamentacion">
-            <p class="desarrollo-texto">.</p>
+            <p class="desarrollo-texto" id="fundamento"</p>
         </div>
         <div class="puntaje">
             <p class="puntaje-texto">x/12</p>
         </div>
+        <a href="#" type="button" class="btn-siguiente" onclick="siguiente();">Siguiente</a>  
+
       </div>
         
     </main>

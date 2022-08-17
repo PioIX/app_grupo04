@@ -33,6 +33,7 @@ function check(rta){
   }  
 }
 
+
 // muestra afirmación siguiente - diegocode
 function siguiente(){
   var foot = document.getElementById('footer');
