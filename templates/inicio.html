@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="UTF-8">
-    <link rel="stylesheet" href="../static/css/pantalla-inicio.css">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/inicio.css') }}">
     <title>Verdadero o falso ODS 5</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -25,7 +25,7 @@
 
 </p>
         <div class="inicio">
-            <img src="../static/img/fotos/logo-ods5.jpg">
+            <img src= "{{ url_for('static', filename='/img/fotos/logo-ods5.jpg') }}">
         </div>
     </main>
     <footer>

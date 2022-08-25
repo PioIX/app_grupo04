@@ -12,11 +12,10 @@ body {
   position: absolute;
 }
 
-
 h1 {
   font-size: 370%;
   margin-top: 100px;
-  margin-left: 330px;
+  margin-left: 420px;
   position: absolute;
   z-index: 1;  
 }
@@ -36,7 +35,7 @@ h1 {
 }
 h2 {
   margin: 0;
-  font-size: 30px;
+  font-size: 24px;
   text-align: center;
   z-index: 1;
   color:#515151;
@@ -124,9 +123,8 @@ h2 {
 
 .fundamentacion {
   padding: 40px;
-  margin: auto;
-  margin-top: 550px;
-  margin-left:50px;
+  margin-top: 510px;
+  margin-left:10px;
   width: 1110px;
   height: 60px;
   position: absolute;
@@ -136,18 +134,18 @@ h2 {
   background-color:white;
   border: 1px solid black;
   padding: 40px;
-  margin-top: 690px;
+  margin-top: 710px;
   margin-left:480px;
   width: 150px;
-  height: 30px;
+  height: 20px;
   border-radius: 7px;
   position: absolute;
 }
 
 .desarrollo-texto{
-  font-size: 125%;
-  margin: auto 15px;
-  position: absolute;
+  font-size: 110%;
+  margin: 0px 10px;
+  text-align: center;
   z-index: 1;
   line-height: 30px;
 }
@@ -170,7 +168,7 @@ h2 {
 
 .puntaje-texto{
   font-size: 200%;
-  margin: auto 45px;
+  margin: auto 40px;
   position: absolute;
   z-index: 1;
   line-height: 30px;

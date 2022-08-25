@@ -22,6 +22,7 @@ def juego():
     dicc['correcta'] = x[1]
     dicc['id_pregunta'] = x[2]
     dicc['contenido'] = x[3]
+    dicc['respuesta'] = x[4]
 
     afirmaciones.append(dicc)
   
@@ -30,5 +31,12 @@ def juego():
 
   print(dicc)
   return render_template('juego.html',afirmaciones=afirmaciones)
+
+@app.route('/resultados/<puntaje>/<tiempo>')
+def resultados(puntaje, tiempo):
+  print("El tiempo fue: ")
+  print(tiempo)
+  return render_template('resultados.html', puntos=puntaje, tiempoFinal=tiempo)
+  
 
 app.run(host='0.0.0.0', port=81)
